@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>GHOOST TV</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div id="enterScreen">
+  <img src="imagens/logo.png" id="enterLogo">
+  <h1>GHOOST STUDIOS</h1>
+  <button id="enterBtn">▶ ENTRAR</button>
+</div>
+
+<div id="liveBar">
+  <span class="liveDot"></span> AO VIVO
+  <span id="clock"></span>
+</div>
+
+<div id="playerContainer" class="hidden">
+  <video id="player" autoplay muted playsinline preload="auto"></video>
+  <img id="bug" src="imagens/logo.png">
+  <div id="overlay">
+    <div><small>NO AR</small><div id="nowPlaying"></div></div>
+    <div><small>PRÓXIMO</small><div id="nextPlaying"></div></div>
+  </div>
+</div>
+
+<script src="playlist.js"></script>
+<script src="script.js"></script>
+</body></html>
