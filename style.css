@@ -1,0 +1,15 @@
+*{margin:0;padding:0;box-sizing:border-box;font-family:Arial,sans-serif}
+body{background:#000;color:#fff;overflow:hidden}
+#enterScreen{position:fixed;inset:0;display:flex;flex-direction:column;justify-content:center;align-items:center;gap:18px;background:#050505;z-index:20}
+#enterLogo{width:120px;border-radius:50%}
+#enterBtn{padding:16px 34px;border:none;border-radius:14px;background:#3ec8ff;font-size:22px;font-weight:bold;cursor:pointer}
+.hidden{display:none}
+#liveBar{position:fixed;top:15px;left:15px;background:rgba(0,0,0,.55);padding:8px 12px;border-radius:10px;z-index:5}
+.liveDot{display:inline-block;width:10px;height:10px;background:red;border-radius:50%;animation:p 1s infinite}
+@keyframes p{50%{opacity:.3}}
+#clock{margin-left:10px}
+#playerContainer{width:100vw;height:100vh;position:relative}
+video{width:100%;height:100%;object-fit:contain;background:#000}
+#bug{position:absolute;right:20px;bottom:60px;width:70px}
+#overlay{position:absolute;left:0;right:0;bottom:0;padding:20px;background:linear-gradient(transparent,#000);display:flex;justify-content:space-between}
+small{color:#63d6ff}
